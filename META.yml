@@ -1,17 +1,32 @@
-name: Convert-PEM
-version: 0.07
-abstract: Read/write encrypted ASN.1 PEM files
-author: Benjamin Trott <ben+cpan@stupidfool.org>
-license: perl
+---
+abstract: 'Read/write encrypted ASN.1 PEM files'
+author:
+  - '& COPYRIGHTS'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
 distribution_type: module
-requires:
-  Class::ErrorHandler: 0
-  MIME::Base64: 0
-  Convert::ASN1: 0.10
-  Digest::MD5: 0
-  Crypt::DES_EDE3: 0
+generated_by: 'Module::Install version 1.00'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Convert-PEM
 no_index:
   directory:
-    - t
     - inc
-generated_by: Module::Install version 0.36
+    - t
+    - xt
+requires:
+  Class::ErrorHandler: 0
+  Convert::ASN1: 0.10
+  Crypt::DES_EDE3: 0
+  Digest::MD5: 0
+  Filter::Util::Call: 0
+  MIME::Base64: 0
+  perl: 5.8.1
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/btrott/Convert-PEM.git
+version: 0.08
