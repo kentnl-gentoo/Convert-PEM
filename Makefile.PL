@@ -1,3 +1,4 @@
+use lib '.';
 use inc::Module::Install;
 name 'Convert-PEM';
 all_from 'lib/Convert/PEM.pm';
